@@ -31,7 +31,7 @@ function placeAPoleAtMousePoint(e)
     };
     
     var isButton = false;
-    if(e.target.tagName != "HTML")
+    if(e.target.tagName == "BUTTON")
         {
             isButton = true;
         }
