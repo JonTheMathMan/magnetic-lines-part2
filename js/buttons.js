@@ -43,5 +43,6 @@ function placeAPoleAtMousePoint(e)
     if(poleTypeCreation.north && !isButton)
         {
             norths.push(newMainPole(northProperties));
+            viewGrowthPoints();
         }
 }

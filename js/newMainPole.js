@@ -7,19 +7,19 @@ function newMainPole(properties={pX:0,pY:0})
     
     if(pole.poleType === "north")
         {
+            var deg45Value = 10*Math.sqrt(2)/2;
             pole.growthPoints = [
                 {pX:pole.pX,pY:pole.pY-10},
-                {pX:pole.pX+7,pY:pole.pY-7},
+                {pX:pole.pX+deg45Value,pY:pole.pY-deg45Value},
                 {pX:pole.pX+10,pY:pole.pY},
-                {pX:pole.pX+7,pY:pole.pY+7},
+                {pX:pole.pX+deg45Value,pY:pole.pY+deg45Value},
                 {pX:pole.pX,pY:pole.pY+10},
-                {pX:pole.pX-7,pY:pole.pY+7},
+                {pX:pole.pX-deg45Value,pY:pole.pY+deg45Value},
                 {pX:pole.pX-10,pY:pole.pY},
-                {pX:pole.pX-7,pY:pole.pY-7},
+                {pX:pole.pX-deg45Value,pY:pole.pY-deg45Value},
             ];
         }
     
     document.body.appendChild(pole);
-    
     return pole;
 }
