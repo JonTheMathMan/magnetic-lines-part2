@@ -1,13 +1,19 @@
 <html>
 <body>
-
-    <button id="southButton" onclick="addSouths()">Place south poles.</button>
-    <button id="northButton" onclick="addNorths()">Place north poles.</button>
+    <svg id="asvg" viewBox="0 0 3000 3000" width="3000px" style="position:absolute;left:0;top:0;z-index:1;">
+    <path id="apath" fill="#fff" stroke="#000" d=""></path>
+    </svg>
+    <button id="southButton" style="position:relative;z-index:2;" onclick="addSouths()">Place south poles.</button>
+    <button id="northButton" style="position:relative;z-index:2;" onclick="addNorths()">Place north poles.</button>
+    <button id="generate" style="position:relative;z-index:2;" onclick="generateLines()">Grow lines.</button>
     <script src="js/newMainPole.js"></script>
     <script src="js/globalArraysAndObjects.js"></script>
     <script src="js/buttons.js"></script>
     <script src="js/someBasicFunctions.js"></script>
     <script src="js/orientGrowthPoints.js"></script>
     <script src="js/growthPointsView.js"></script>
+    <script src="js/rotateToEquilibrium.js"></script>
+    <script src="js/buildALine.js"></script>
+    <script src="js/generateLines.js"></script>
 </body>
 </html>

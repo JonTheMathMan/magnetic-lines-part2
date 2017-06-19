@@ -2,6 +2,7 @@ function newMainPole(properties={pX:0,pY:0})
 {
     var pole = Object.assign(document.createElement("img"),properties);
     pole.style.position = "absolute";
+    pole.style.zIndex = 3;
     pole.style.left = pole.pX-5;
     pole.style.top = pole.pY-5;
     
