@@ -3,7 +3,7 @@
 
 This is part two of using nothing but math and reason to imitate the look and behavior of magnetic lines.
 
-In part 1 I made a grid of compasses that oriented to the magnetic field. [part1](www.github.com/jonthemathman/magnetic-lines-part1)
+In part 1 I made a grid of compasses that oriented to the magnetic field. [part1](https://github.com/JonTheMathMan/magnetic-lines-part1)
 
 In part 2 I made the lines flow continuously. I also made the starting growth points of the continuous lines move towards and away from other poles so that the growth points weren't static.
 
