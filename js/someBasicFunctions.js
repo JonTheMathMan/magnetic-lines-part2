@@ -16,6 +16,18 @@ function getPixelDistance(firstPointObject,secondPointObject)
     return Math.round(getDistance(firstPointObject,secondPointObject));
 }
 
+function getAxisVectorDifference(goingTo=0,comingFrom=0)
+{
+    return (goingTo - comingFrom);
+}
+
+function getArraySum(anArray)
+{
+    var sum = 0;
+    anArray.forEach(function(aNumber){sum+=aNumber;});
+    return sum;
+}
+
 function getLineAngle(point1={pX:0,pY:0},point2={pX:1,pY:1})
 {
     var angle = 0;

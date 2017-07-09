@@ -25,7 +25,7 @@ function buildALine(pointObject={pX:0,pY:0})
         
         //stop if 12 pixels away from any south or running too long.
         recurrences++;
-        if(recurrences>700)
+        if(recurrences>310)
             {
                 iShouldStop = true;
             }
