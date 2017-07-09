@@ -21,15 +21,16 @@ function buildALine(pointObject={pX:0,pY:0})
         
         //path line
         pathString = pathString+"L"+recurringPx+","+recurringPy;
-        aPath.attributes.d.value = pathString;
+        
         
         //stop if 12 pixels away from any south or running too long.
         recurrences++;
         if(recurrences>310)
             {
                 iShouldStop = true;
+                aPath.attributes.d.value = pathString;
             }
-        souths.forEach(function(aSouth){if(12>getDistance({pX:recurringPx,pY:recurringPy},aSouth)){iShouldStop=true;}});
+        souths.forEach(function(aSouth){if(12>getDistance({pX:recurringPx,pY:recurringPy},aSouth)){iShouldStop=true;aPath.attributes.d.value = pathString;}});
         if(!iShouldStop)
             {
                 continueGrowing();
