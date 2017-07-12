@@ -10,8 +10,6 @@ In part 2 I made the lines flow continuously. I also made the starting growth po
 ### Disclaimer:
 This program is in no way intended to be a real magnetic line simulator and any result found with this program could be wrong. This program is just for trying to mimic the look and behaviour of magnetic lines with math. It is only for fun so have fun!
 
-![alt text](screenshot2.png)
-
 ### Potential ToDo
 
 - [ ] Make something like animation tweens so that the poles and lines can be animated.
